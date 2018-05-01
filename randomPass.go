@@ -22,6 +22,9 @@ func main() {
 	switch len(arguments) {
 	case 2:
 		LENGTH, _ = strconv.ParseInt(os.Args[1], 10, 64)
+		if LENGTH <= 0 {
+			LENGTH = 8
+		}
 	default:
 		fmt.Println("Using default values!")
 	}
@@ -40,4 +43,3 @@ func main() {
 	}
 	fmt.Println()
 }
-
