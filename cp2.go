@@ -9,7 +9,7 @@ import (
 func main() {
 	if len(os.Args) != 3 {
 		fmt.Println("Please provide two command line arguments!")
-		os.Exit(1)
+		return
 	}
 
 	sourceFile := os.Args[1]
