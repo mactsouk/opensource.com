@@ -9,7 +9,6 @@ func change(x [4]int) {
 }
 
 func main() {
-
 	anArray := [4]int{-1, 2, 0, -4}
 	twoD := [3][3]int{{1, 2, 3}, {6, 7, 8}, {10, 11, 12}}
 
